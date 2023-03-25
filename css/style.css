@@ -1,0 +1,390 @@
+/** Página del index **/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: aliceblue;
+}
+
+.contenedorHeader {
+  display: grid;
+  grid-template-areas: "itemNav1 itemNav2";
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 100%;
+  align-items: center;
+  border-bottom: 1px solid #ffffff;
+  position: sticky;
+  top: 0;
+}
+
+.itemNav1 {
+  grid-area: itemNav1;
+}
+.itemNav2 {
+  grid-area: itemNav2;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-content: center;
+}
+
+.logo1 {
+  width: 100px;
+  height: 100px;
+  margin: 0px 0px 0px 30px;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedorHeader {
+    display: grid;
+    grid-template-areas:
+      "itemNav1"
+      "itemNav2";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ffffff;
+    position: sticky;
+    top: 0;
+  }
+
+  .itemNav1 {
+    grid-area: itemNav1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo1 {
+    margin: 0px;
+  }
+  .itemNav2 {
+    grid-area: itemNav2;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+
+nav ul li a:hover {
+  color: #991d50;
+}
+
+/**contenedor grid 1**/
+.grid1 {
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "item1 item2"
+    "item item2";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 163px 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+/**Hijos item de la grid1**/
+.item1 {
+  grid-area: item1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+.item {
+  grid-area: item;
+}
+.item2 {
+  display: flex;
+  grid-area: item2;
+  justify-content: center;
+}
+
+.miFoto {
+  border-radius: 20px;
+  width: 380px;
+}
+.parrafoSobremi {
+  padding: 30px;
+  line-height: 1.6rem;
+}
+
+
+
+/** esta es la queries del grid1**/
+@media screen and (max-width: 768px) {
+  .grid1 {
+    grid-template-areas:
+      "item1"
+      "item"
+      "item2";
+    grid-template-columns: 80%;
+    justify-content: space-around;
+    justify-items: stretch;
+  }
+
+  .miFoto {
+    width: 270px;
+    height: 270px;
+    justify-content: center;
+  }
+}
+
+
+
+/**contenedor grid 2**/
+.grid2 {
+  min-height: 100vh;
+  grid-template-areas:
+    "itemdelSubtitulo1"
+    "contenedor1Flex";
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.itemdelSubtitulo1 {
+  grid-area: itemdelSubtitulo1;
+  font-size: 50px;
+}
+
+.contenedor1Flex {
+  grid-area: contenedor1Flex;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.itemdelSubtitulo2 {
+  grid-area: itemdelSubtitulo2;
+  font-size: 50px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.tituloPrincipal {
+  text-align: center;
+  font-size: 40px;
+}
+.subTituloprincipal {
+  text-align: center;
+}
+
+.subEncabezados {
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.caja1,
+.caja2,
+.caja3 {
+  width: 350px;
+  height: 350px;
+  background-color: #000000;
+  margin: 33px;
+  padding: 30px;
+  border: 1px solid rgb(0, 0, 0);
+  line-height: 1.6rem;
+  box-shadow: rgba(67, 63, 66, 0.773) 0px 5px 15px;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.caja1,
+.caja2,
+.caja3,
+p {
+  text-align: center;
+}
+
+.boton__cajas {
+  color: #ffffff;
+  padding: 10px;
+  margin: 5px;
+  background-color: #453f3f;
+  border: 2px solid rgb(88 79 86 / 77%);
+  width: 150px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 17px;
+}
+.caja1 img {
+  width: 150px;
+  height: 150px;
+}
+.caja2 img {
+  width: 150px;
+  height: 150px;
+}
+
+.caja3 img {
+  width: 150px;
+  height: 150px;
+}
+@media screen and (max-width: 768px) {
+  .caja1,
+  .caja2,
+  .caja3 {
+    width: 664px;
+    height: 282px;
+    background-color: #000000;
+    margin: 25px;
+    padding: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    line-height: 1.6rem;
+    box-shadow: rgba(67, 63, 66, 0.773) 0px 5px 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/**aca comienzan los estilos del formulario**/
+
+.contenedor2Flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contacto1 {
+  width: 431px;
+}
+
+.titulodeContacto {
+  font-size: 60px;
+  font-family: "Fredoka One", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+div ul li {
+  padding: 10px;
+  font-weight: bold;
+}
+
+fieldset {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: center;
+  flex-direction: column;
+  background-color: #000000;
+  margin: 30px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.cajadelFormulario {
+  width: 300px;
+  height: 32px;
+  border-radius: 18px;
+}
+
+.nombresdelFormulario {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+.cajadeComentario {
+  height: 104px;
+  width: 300px;
+  border-radius: 32px;
+}
+
+.boton {
+  color: #ffffff;
+  padding: 10px;
+  margin: 5px;
+  background-color: #453f3f;
+  border: 2px solid rgb(88 79 86 / 77%);
+  width: 124px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 17px;
+}
+
+.boton:hover {
+  background-color: #991d50;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor2Flex {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+/**aca terminan los estilos del formulario**/
+
+footer ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.logo2 {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.logo3 {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 13px;
+  border-top: 1px solid #ffffff;
+  padding: 3px 0px 3px 0px;
+}
+
+/**PÁGINA SOBRE MI**/
