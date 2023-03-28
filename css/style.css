@@ -415,17 +415,14 @@ footer ul {
  @media screen and (max-width: 768px) {
 .DescripciondelCurso{
   display: flex;
-    width: 591px;
-    height: 412px;
-    list-style-type: none;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: flex-end;
+  width: 581px;
+  height: 507px;
+  list-style-type: none;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
- }
- @media screen and (max-width: 768px){
-  
  }
