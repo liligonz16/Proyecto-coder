@@ -135,8 +135,6 @@ nav ul li a:hover {
   line-height: 1.6rem;
 }
 
-
-
 /** esta es la queries del grid1**/
 @media screen and (max-width: 768px) {
   .grid1 {
@@ -155,8 +153,6 @@ nav ul li a:hover {
     justify-content: center;
   }
 }
-
-
 
 /**contenedor grid 2**/
 .grid2 {
@@ -389,7 +385,7 @@ footer ul {
 
 /**PÁGINA SOBRE MI**/
 /**estilos de items descriptivos de la modalidad de los cursos**/
- .DescripciondelCurso{
+.DescripciondelCurso {
   display: flex;
   width: 581px;
   height: 508px;
@@ -399,23 +395,22 @@ footer ul {
   justify-content: center;
   align-content: center;
 }
- 
 
- .iconosDedescripcion {
+.iconosDedescripcion {
   width: 50px;
   height: 50px;
   padding: 10px;
- }
+}
 
- .textoDescripcion {
+.textoDescripcion {
   font-size: 20px;
- }
- .parrafodelaDescripcion {
+}
+.parrafodelaDescripcion {
   font-size: 20px;
- }
- @media screen and (max-width: 768px) {
-.DescripciondelCurso{
-  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .DescripciondelCurso {
+    display: flex;
     width: 591px;
     height: 501px;
     list-style-type: none;
@@ -423,12 +418,16 @@ footer ul {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: flex-end;
+  }
 }
-
-
- }
 /**pagina de cursos**/
-.cursosHeader {
+.prueba {
+  display: flex;
   background-color: #991d50;
   width: 100%;
+  height: 297px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
