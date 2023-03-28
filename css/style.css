@@ -391,12 +391,13 @@ footer ul {
 /**estilos de items descriptivos de la modalidad de los cursos**/
  .DescripciondelCurso{
   display: flex;
-    width: 581px;
-    height: 361px;
-    list-style-type: none;
-    align-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+  width: 581px;
+  height: 508px;
+  list-style-type: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
  
 
@@ -415,13 +416,13 @@ footer ul {
  @media screen and (max-width: 768px) {
 .DescripciondelCurso{
   display: flex;
-  width: 581px;
-  height: 507px;
-  list-style-type: none;
-  align-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
+    width: 591px;
+    height: 501px;
+    list-style-type: none;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
 }
 
 
