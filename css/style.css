@@ -154,6 +154,20 @@ nav ul li a:hover {
   }
 }
 
+@media screen and (max-width: 450px){
+  .grid1 {
+    grid-template-areas:
+      "item1"
+      "item"
+      "item2";
+    grid-template-columns: 80%;
+    justify-content: space-around;
+    justify-items: stretch;
+    width: 597px;
+  }
+}
+
+
 /**contenedor grid 2**/
 .grid2 {
   min-height: 100vh;
@@ -273,6 +287,41 @@ p {
   }
 }
 
+@media screen and (max-width: 450px)
+{
+  .caja1,
+  .caja2,
+  .caja3 {
+    width: 525px;
+    height: 350px;
+    background-color: #000000;
+    margin: 33px;
+   
+    border: 1px solid rgb(0, 0, 0);
+    line-height: 1.6rem;
+    box-shadow: rgba(67, 63, 66, 0.773) 0px 5px 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .boton__cajas {
+    color: #f8f9fa;
+    padding: 10px;
+    margin: 5px;
+    background-color: #453f3f;
+    border: 2px solid rgb(88 79 86 / 77%);
+    width: 265px;
+    font-weight: bold;
+    height: 67px;
+    font-size: 30px;
+    border-radius: 16px
+  }
+  p{
+    font-size: 25px;
+    padding: 5px;
+  }
+}
 /**aca comienzan los estilos del formulario**/
 
 .contenedor2Flex {
@@ -355,12 +404,15 @@ fieldset {
 }
 
 /**aca terminan los estilos del formulario**/
-
+/**footer**/
 footer ul {
   display: flex;
   list-style-type: none;
   justify-content: center;
 }
+
+
+
 
 .logo2 {
   width: 50px;
@@ -382,6 +434,21 @@ footer ul {
   border-top: 1px solid #ffffff;
   padding: 3px 0px 3px 0px;
 }
+@media screen and (max-width: 768px){
+
+
+  footer ul {
+    width: 713px;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    flex-wrap: wrap
+  }
+
+}
+
+
+
 
 /**PÁGINA SOBRE MI**/
 /**estilos de items descriptivos de la modalidad de los cursos**/
@@ -412,6 +479,19 @@ footer ul {
   .DescripciondelCurso {
     display: flex;
     width: 591px;
+    height: 501px;
+    list-style-type: none;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+  }
+
+}
+@media screen and (max-width: 450px){
+  .DescripciondelCurso {
+    display: flex;
+    width: 563px;
     height: 501px;
     list-style-type: none;
     justify-content: flex-end;
