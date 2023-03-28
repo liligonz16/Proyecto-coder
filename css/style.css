@@ -388,3 +388,44 @@ footer ul {
 }
 
 /**PÁGINA SOBRE MI**/
+/**estilos de items descriptivos de la modalidad de los cursos**/
+ .DescripciondelCurso{
+  display: flex;
+    width: 581px;
+    height: 361px;
+    list-style-type: none;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+ 
+
+ .iconosDedescripcion {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+ }
+
+ .textoDescripcion {
+  font-size: 20px;
+ }
+ .parrafodelaDescripcion {
+  font-size: 20px;
+ }
+ @media screen and (max-width: 768px) {
+.DescripciondelCurso{
+  display: flex;
+    width: 591px;
+    height: 412px;
+    list-style-type: none;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+
+ }
+ @media screen and (max-width: 768px){
+  
+ }
