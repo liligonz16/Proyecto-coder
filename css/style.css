@@ -427,3 +427,8 @@ footer ul {
 
 
  }
+/**pagina de cursos**/
+.cursosHeader {
+  background-color: #991d50;
+  width: 100%;
+}
