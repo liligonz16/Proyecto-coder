@@ -155,7 +155,7 @@ nav ul li a:hover {
   }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px) {
   .grid1 {
     grid-template-areas:
       "item1"
@@ -167,7 +167,6 @@ nav ul li a:hover {
     width: 711px;
   }
 }
-
 
 /**contenedor grid 2**/
 .grid2 {
@@ -288,8 +287,7 @@ p {
   }
 }
 
-@media screen and (max-width: 450px)
-{
+@media screen and (max-width: 450px) {
   .caja1,
   .caja2,
   .caja3 {
@@ -315,9 +313,9 @@ p {
     font-weight: bold;
     height: 67px;
     font-size: 30px;
-    border-radius: 16px
+    border-radius: 16px;
   }
-  p{
+  p {
     font-size: 25px;
     padding: 5px;
   }
@@ -358,7 +356,6 @@ fieldset {
   margin: 30px;
   border: 2px solid rgb(0, 0, 0);
 }
-
 
 .formulario1 {
   width: 431px;
@@ -407,15 +404,13 @@ fieldset {
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .contenedor2Flex {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     width: 750px;
   }
-
 }
-
 
 /**aca terminan los estilos del formulario**/
 /**footer**/
@@ -424,9 +419,6 @@ footer ul {
   list-style-type: none;
   justify-content: center;
 }
-
-
-
 
 .logo2 {
   width: 50px;
@@ -448,23 +440,73 @@ footer ul {
   border-top: 1px solid #ffffff;
   padding: 3px 0px 3px 0px;
 }
-@media screen and (max-width: 768px){
-
-
+@media screen and (max-width: 768px) {
   footer ul {
     width: 713px;
     display: flex;
     list-style-type: none;
     justify-content: center;
-    flex-wrap: wrap
+    flex-wrap: wrap;
   }
-
 }
 
-
-
-
 /**PÁGINA SOBRE MI**/
+
+/**contenedor grid 3**/
+.grid3 {
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "gridItem1 gridItem3"
+    "gridItem2 gridItem3";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 268px 2fr;
+  align-items: center;
+}
+
+.gridItem1 {
+  display: flex;
+  grid-area: gridItem1;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.gridItem2 {
+  grid-area: gridItem2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.gridItem3 {
+  grid-area: gridItem3;
+  display: flex;
+  justify-content: center;
+}
+.SubtituloSobremi {
+  padding: 25px;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 25px;
+}
+
+.parrafoSobremi2 {
+  margin-bottom: 2rem;
+  margin-left: 25px;
+}
+
+.boton5 {
+  display: block;
+  padding: 15px;
+  background-color: darkmagenta;
+}
+.especialidades{
+
+display: flex;
+flex-direction: column;
+
+}
 /**estilos de items descriptivos de la modalidad de los cursos**/
 .DescripciondelCurso {
   display: flex;
@@ -500,9 +542,8 @@ footer ul {
     align-content: flex-end;
     justify-content: center;
   }
-
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px) {
   .DescripciondelCurso {
     display: flex;
     width: 563px;
