@@ -359,6 +359,10 @@ fieldset {
   border: 2px solid rgb(0, 0, 0);
 }
 
+
+.formulario1 {
+  width: 431px;
+}
 .cajadelFormulario {
   width: 300px;
   height: 32px;
@@ -402,6 +406,16 @@ fieldset {
     flex-wrap: nowrap;
   }
 }
+
+@media screen and (max-width: 768px){
+  .contenedor2Flex {
+    display: flex;
+    flex-wrap:wrap;
+    width: 750px;
+  }
+
+}
+
 
 /**aca terminan los estilos del formulario**/
 /**footer**/
