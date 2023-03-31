@@ -6,11 +6,9 @@
   box-sizing: border-box;
 }
 
-
 body {
   background-color: #000000;
   color: aliceblue;
-
 }
 
 .contenedorHeader {
@@ -108,7 +106,6 @@ nav ul li a:hover {
   grid-template-rows: 163px 1fr;
   align-items: center;
   justify-items: center;
-  
 }
 
 /**Hijos item de la grid1**/
@@ -500,16 +497,43 @@ footer ul {
 }
 
 .boton5 {
-  display: block;
+  display: flex;
   padding: 15px;
+  justify-content: center;
   background-color: darkmagenta;
+  font-size: 30px;
 }
-.especialidades{
 
-display: flex;
-flex-direction: column;
-
+/**grid4**/
+.grid4 {
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas: "especialidades frase";
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
 }
+
+.especialidades {
+  grid-area: especialidades;
+  display: flex;
+  flex-direction: column;
+}
+.frase {
+  grid-area: frase;
+  display: flex;
+  width: 434px;
+  justify-content: flex-start
+ 
+}
+.fotoFrase {
+  width: 369px;
+  height: 580px;
+}
+h3 {
+  padding: 15px;
+}
+/**aca termina la pagina sobre mi **/
 /**estilos de items descriptivos de la modalidad de los cursos**/
 .DescripciondelCurso {
   display: flex;
@@ -561,7 +585,7 @@ flex-direction: column;
 /**pagina de cursos**/
 .prueba {
   display: flex;
-  background-color: darkmagenta;;
+  background-color: darkmagenta;
   height: 297px;
   flex-direction: column;
   flex-wrap: wrap;
