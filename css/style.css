@@ -6,9 +6,11 @@
   box-sizing: border-box;
 }
 
+
 body {
   background-color: #000000;
   color: aliceblue;
+
 }
 
 .contenedorHeader {
@@ -92,7 +94,7 @@ nav ul {
 }
 
 nav ul li a:hover {
-  color: #991d50;
+  color: darkmagenta;
 }
 
 /**contenedor grid 1**/
@@ -106,6 +108,7 @@ nav ul li a:hover {
   grid-template-rows: 163px 1fr;
   align-items: center;
   justify-items: center;
+  
 }
 
 /**Hijos item de la grid1**/
@@ -558,7 +561,7 @@ flex-direction: column;
 /**pagina de cursos**/
 .prueba {
   display: flex;
-  background-color: #991d50;
+  background-color: darkmagenta;;
   height: 297px;
   flex-direction: column;
   flex-wrap: wrap;
