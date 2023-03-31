@@ -523,8 +523,7 @@ footer ul {
   grid-area: frase;
   display: flex;
   width: 434px;
-  justify-content: flex-start
- 
+  justify-content: flex-start;
 }
 .fotoFrase {
   width: 369px;
@@ -591,4 +590,44 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+/**pagina de recursos gratis**/
+/**grid5**/
+
+.aprendeGratis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px;
+  height: 300px;
+}
+
+.fotodeRecursos {
+  width: 330px;
+  height: 300px;
+}
+.contenedorAprendeGratis1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 490px;
+}
+.aprende1 {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 387px;
+    height: 389px;
+}
+.aprende2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 387px;
+  height: 389px;
 }
