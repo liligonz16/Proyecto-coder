@@ -1,4 +1,31 @@
-/** Página del index **/
+@charset "UTF-8";
+/** Página del index **/ /** aca comienza la nav**/
+.contenedorHeader {
+  display: grid;
+  grid-template-areas: "itemNav1 itemNav2";
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 100%;
+  align-items: center;
+  border-bottom: 1px solid #ffffff;
+  position: sticky;
+  top: 0;
+}
+.contenedorHeader .logo1 {
+  width: 100px;
+  height: 100px;
+  margin: 0px 0px 0px 30px;
+  display: flex;
+}
+.contenedorHeader .itemNav1 {
+  grid-area: itemNav1;
+}
+.contenedorHeader .itemNav2 {
+  grid-area: itemNav2;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-content: center;
+}
 
 * {
   margin: 0;
@@ -11,6 +38,7 @@ body {
   color: aliceblue;
 }
 
+/** aca comienza la nav**/
 .contenedorHeader {
   display: grid;
   grid-template-areas: "itemNav1 itemNav2";
@@ -21,11 +49,16 @@ body {
   position: sticky;
   top: 0;
 }
-
-.itemNav1 {
+.contenedorHeader .logo1 {
+  width: 100px;
+  height: 100px;
+  margin: 0px 0px 0px 30px;
+  display: flex;
+}
+.contenedorHeader .itemNav1 {
   grid-area: itemNav1;
 }
-.itemNav2 {
+.contenedorHeader .itemNav2 {
   grid-area: itemNav2;
   display: flex;
   list-style-type: none;
@@ -33,19 +66,10 @@ body {
   align-content: center;
 }
 
-.logo1 {
-  width: 100px;
-  height: 100px;
-  margin: 0px 0px 0px 30px;
-  display: flex;
-}
-
 @media screen and (max-width: 768px) {
   .contenedorHeader {
     display: grid;
-    grid-template-areas:
-      "itemNav1"
-      "itemNav2";
+    grid-template-areas: "itemNav1" "itemNav2";
     grid-template-columns: 100%;
     grid-template-rows: 1fr;
     align-items: center;
@@ -54,13 +78,11 @@ body {
     position: sticky;
     top: 0;
   }
-
   .itemNav1 {
     grid-area: itemNav1;
     display: flex;
     justify-content: center;
   }
-
   .logo1 {
     margin: 0px;
   }
@@ -72,7 +94,6 @@ body {
     align-content: center;
     height: 50px;
   }
-
   nav ul {
     list-style-type: none;
     display: flex;
@@ -83,25 +104,29 @@ body {
     justify-content: center;
   }
 }
-
 nav ul {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
   width: 70%;
 }
-
+nav ul li {
+  color: #ffffff;
+}
 nav ul li a:hover {
   color: darkmagenta;
 }
 
+/**ya no se usa
+  nav ul li a:hover {
+    color: darkmagenta;
+  }
+  **/
 /**contenedor grid 1**/
 .grid1 {
   min-height: 100vh;
   display: grid;
-  grid-template-areas:
-    "item1 item2"
-    "item item2";
+  grid-template-areas: "item1 item2" "item item2";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 163px 1fr;
   align-items: center;
@@ -117,9 +142,11 @@ nav ul li a:hover {
   align-content: center;
   justify-content: center;
 }
+
 .item {
   grid-area: item;
 }
+
 .item2 {
   display: flex;
   grid-area: item2;
@@ -130,6 +157,7 @@ nav ul li a:hover {
   border-radius: 20px;
   width: 380px;
 }
+
 .parrafoSobremi {
   padding: 30px;
   line-height: 1.6rem;
@@ -138,42 +166,31 @@ nav ul li a:hover {
 /** esta es la queries del grid1**/
 @media screen and (max-width: 768px) {
   .grid1 {
-    grid-template-areas:
-      "item1"
-      "item"
-      "item2";
+    grid-template-areas: "item1" "item" "item2";
     grid-template-columns: 80%;
     justify-content: space-around;
     justify-items: stretch;
     width: 720px;
   }
-
   .miFoto {
     width: 270px;
     height: 270px;
     justify-content: center;
   }
 }
-
 @media screen and (max-width: 450px) {
   .grid1 {
-    grid-template-areas:
-      "item1"
-      "item"
-      "item2";
+    grid-template-areas: "item1" "item" "item2";
     grid-template-columns: 80%;
     justify-content: space-around;
     justify-items: stretch;
     width: 711px;
   }
 }
-
 /**contenedor grid 2**/
 .grid2 {
   min-height: 100vh;
-  grid-template-areas:
-    "itemdelSubtitulo1"
-    "contenedor1Flex";
+  grid-template-areas: "itemdelSubtitulo1" "contenedor1Flex";
   display: grid;
   align-items: center;
   justify-items: center;
@@ -204,6 +221,7 @@ body {
   text-align: center;
   font-size: 40px;
 }
+
 .subTituloprincipal {
   text-align: center;
 }
@@ -249,16 +267,18 @@ p {
   padding: 10px;
   margin: 5px;
   background-color: #453f3f;
-  border: 2px solid rgb(88 79 86 / 77%);
+  border: 2px solid rgba(88, 79, 86, 0.77);
   width: 150px;
   font-weight: bold;
   font-size: 15px;
   border-radius: 17px;
 }
+
 .caja1 img {
   width: 150px;
   height: 150px;
 }
+
 .caja2 img {
   width: 150px;
   height: 150px;
@@ -268,6 +288,7 @@ p {
   width: 150px;
   height: 150px;
 }
+
 @media screen and (max-width: 768px) {
   .caja1,
   .caja2,
@@ -286,7 +307,6 @@ p {
     align-items: center;
   }
 }
-
 @media screen and (max-width: 450px) {
   .caja1,
   .caja2,
@@ -308,7 +328,7 @@ p {
     padding: 10px;
     margin: 5px;
     background-color: #453f3f;
-    border: 2px solid rgb(88 79 86 / 77%);
+    border: 2px solid rgba(88, 79, 86, 0.77);
     width: 265px;
     font-weight: bold;
     height: 67px;
@@ -321,7 +341,6 @@ p {
   }
 }
 /**aca comienzan los estilos del formulario**/
-
 .contenedor2Flex {
   display: flex;
   flex-wrap: wrap;
@@ -360,6 +379,7 @@ fieldset {
 .formulario1 {
   width: 431px;
 }
+
 .cajadelFormulario {
   width: 300px;
   height: 32px;
@@ -370,7 +390,6 @@ fieldset {
   font-size: 20px;
   font-weight: bold;
   padding: 15px;
-
   font-family: "Montserrat", sans-serif;
 }
 
@@ -385,7 +404,7 @@ fieldset {
   padding: 10px;
   margin: 5px;
   background-color: #453f3f;
-  border: 2px solid rgb(88 79 86 / 77%);
+  border: 2px solid rgba(88, 79, 86, 0.77);
   width: 124px;
   font-weight: bold;
   font-size: 18px;
@@ -403,7 +422,6 @@ fieldset {
     flex-wrap: nowrap;
   }
 }
-
 @media screen and (max-width: 768px) {
   .contenedor2Flex {
     display: flex;
@@ -411,7 +429,6 @@ fieldset {
     width: 750px;
   }
 }
-
 /**aca terminan los estilos del formulario**/
 /**footer**/
 footer ul {
@@ -440,6 +457,7 @@ footer ul {
   border-top: 1px solid #ffffff;
   padding: 3px 0px 3px 0px;
 }
+
 @media screen and (max-width: 768px) {
   footer ul {
     width: 713px;
@@ -449,16 +467,12 @@ footer ul {
     flex-wrap: wrap;
   }
 }
-
 /**PÁGINA SOBRE MI**/
-
 /**contenedor grid 3**/
 .grid3 {
   min-height: 100vh;
   display: grid;
-  grid-template-areas:
-    "gridItem1 gridItem3"
-    "gridItem2 gridItem3";
+  grid-template-areas: "gridItem1 gridItem3" "gridItem2 gridItem3";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 268px 2fr;
   align-items: center;
@@ -484,6 +498,7 @@ footer ul {
   display: flex;
   justify-content: center;
 }
+
 .SubtituloSobremi {
   padding: 25px;
   font-size: 25px;
@@ -519,19 +534,24 @@ footer ul {
   display: flex;
   flex-direction: column;
 }
+
 .frase {
   grid-area: frase;
   display: flex;
   width: 434px;
   justify-content: flex-start;
 }
+
 .fotoFrase {
   width: 369px;
   height: 580px;
+  border-radius: 30px;
 }
+
 h3 {
   padding: 15px;
 }
+
 /**aca termina la pagina sobre mi **/
 /**estilos de items descriptivos de la modalidad de los cursos**/
 .DescripciondelCurso {
@@ -554,9 +574,11 @@ h3 {
 .textoDescripcion {
   font-size: 20px;
 }
+
 .parrafodelaDescripcion {
   font-size: 20px;
 }
+
 @media screen and (max-width: 768px) {
   .DescripciondelCurso {
     display: flex;
@@ -591,10 +613,17 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+.prueba .conteinerCurso {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.prueba .conteinerCurso p {
+  font-size: 25px;
+}
 
 /**pagina de recursos gratis**/
 /**grid5**/
-
 .aprendeGratis {
   display: flex;
   flex-direction: column;
@@ -604,25 +633,32 @@ h3 {
   margin: 30px;
   height: 300px;
 }
+.aprendeGratis p {
+  font-size: 25px;
+}
 
 .fotodeRecursos {
   width: 330px;
   height: 300px;
+  border-radius: 30px;
 }
+
 .contenedorAprendeGratis1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   height: 490px;
 }
+
 .aprende1 {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 387px;
-    height: 389px;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 387px;
+  height: 389px;
 }
+
 .aprende2 {
   display: flex;
   flex-direction: column;
@@ -631,3 +667,5 @@ h3 {
   width: 387px;
   height: 389px;
 }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,27 @@
+ /** aca comienza la nav**/
+ .contenedorHeader {
+    display: grid;
+    grid-template-areas: "itemNav1 itemNav2";
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+    position: sticky;
+    top: 0;
+    .logo1 {
+        width: 100px;
+        height: 100px;
+        margin: 0px 0px 0px 30px;
+        display: flex;
+      }
+      .itemNav1 {
+        grid-area: itemNav1;
+      }
+      .itemNav2 {
+        grid-area: itemNav2;
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        align-content: center;
+      }
+    }

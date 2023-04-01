@@ -1,12 +1,5 @@
 /** Página del index **/
 
-$color-Principal:darkmagenta;
-$color-principal-parrafos: #fff;
-$tamaño-principal-parrafos:25px;
-$borde-principal-card: 30px;
-@import "./componentes/nav";
-
-
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +10,7 @@ $borde-principal-card: 30px;
     background-color: #000000;
     color: aliceblue;
   }
-  /** aca comienza la nav**/
+  
   .contenedorHeader {
     display: grid;
     grid-template-areas: "itemNav1 itemNav2";
@@ -27,23 +20,25 @@ $borde-principal-card: 30px;
     border-bottom: 1px solid #ffffff;
     position: sticky;
     top: 0;
-    .logo1 {
-        width: 100px;
-        height: 100px;
-        margin: 0px 0px 0px 30px;
-        display: flex;
-      }
-      .itemNav1 {
-        grid-area: itemNav1;
-      }
-      .itemNav2 {
-        grid-area: itemNav2;
-        display: flex;
-        list-style-type: none;
-        justify-content: center;
-        align-content: center;
-      }
-    }
+  }
+  
+  .itemNav1 {
+    grid-area: itemNav1;
+  }
+  .itemNav2 {
+    grid-area: itemNav2;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .logo1 {
+    width: 100px;
+    height: 100px;
+    margin: 0px 0px 0px 30px;
+    display: flex;
+  }
   
   @media screen and (max-width: 768px) {
     .contenedorHeader {
@@ -88,28 +83,18 @@ $borde-principal-card: 30px;
       justify-content: center;
     }
   }
-
-  nav 
-     ul {
-      list-style-type: none;
-       display: flex;
-       justify-content: space-around;
-        width: 70%; 
-           li {color: #ffffff;
-            a { 
-           &:hover {color:darkmagenta;
-           }
-        }
-     }
-    }
-
-
-
-/**ya no se usa
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+  }
+  
   nav ul li a:hover {
     color: darkmagenta;
   }
-  **/
+  
   /**contenedor grid 1**/
   .grid1 {
     min-height: 100vh;
@@ -406,7 +391,6 @@ $borde-principal-card: 30px;
     font-size: 18px;
     border-radius: 17px;
   }
-  
   .boton:hover {
     background-color: #991d50;
     color: #ffffff;
@@ -543,7 +527,6 @@ $borde-principal-card: 30px;
   .fotoFrase {
     width: 369px;
     height: 580px;
-    border-radius: $borde-principal-card;
   }
   h3 {
     padding: 15px;
@@ -605,16 +588,7 @@ $borde-principal-card: 30px;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center; 
-     .conteinerCurso {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        p{
-            font-size: $tamaño-principal-parrafos;
-         }
-    }
-    
+    align-items: center;
   }
   
   /**pagina de recursos gratis**/
@@ -628,13 +602,11 @@ $borde-principal-card: 30px;
     justify-content: center;
     margin: 30px;
     height: 300px;
-      p{ font-size: $tamaño-principal-parrafos;}
   }
   
   .fotodeRecursos {
     width: 330px;
     height: 300px;
-    border-radius: 30px;
   }
   .contenedorAprendeGratis1 {
     display: flex;
