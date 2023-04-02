@@ -104,13 +104,6 @@ $borde-principal-card: 30px;
      }
     }
 
-
-
-/**ya no se usa
-  nav ul li a:hover {
-    color: darkmagenta;
-  }
-  **/
   /**contenedor grid 1**/
   .grid1 {
     min-height: 100vh;
@@ -122,6 +115,14 @@ $borde-principal-card: 30px;
     grid-template-rows: 163px 1fr;
     align-items: center;
     justify-items: center;
+    .item1 {
+      grid-area: item1;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+  
   }
   
   /**Hijos item de la grid1**/
