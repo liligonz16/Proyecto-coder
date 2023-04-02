@@ -168,30 +168,6 @@ nav ul li a:hover {
     font-size: 15px;
   }
 }
-/**estilos de items descriptivos de la modalidad de los cursos**/
-.DescripciondelCurso {
-  display: flex;
-  list-style-type: none;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: flex-start;
-}
-.DescripciondelCurso ul {
-  list-style-type: none;
-}
-.DescripciondelCurso .parrafodelaDescripcion {
-  font-size: 35px;
-  padding: 20px;
-}
-.DescripciondelCurso .iconosDedescripcion {
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-}
-.DescripciondelCurso .textoDescripcion {
-  font-size: 20px;
-}
-
 /**contenedor grid 2**/
 .grid2 {
   min-height: 100vh;
@@ -551,35 +527,65 @@ h3 {
 }
 
 /**aca termina la pagina sobre mi **/
+/**estilos de items descriptivos de la modalidad de los cursos**/
 /**pagina de cursos**/
 .prueba {
+  min-height: 50vh;
   display: flex;
   background-color: darkmagenta;
-  height: 297px;
+  padding: 20px;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
 .prueba .conteinerCurso {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+.prueba .conteinerCurso h1 {
+  text-align: center;
+}
 .prueba .conteinerCurso p {
   font-size: 25px;
 }
 
+.DescripciondelCurso {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.DescripciondelCurso ul {
+  list-style-type: none;
+}
+.DescripciondelCurso .parrafodelaDescripcion {
+  font-size: 35px;
+  padding: 20px;
+}
+.DescripciondelCurso .iconosDedescripcion {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+.DescripciondelCurso .textoDescripcion {
+  font-size: 20px;
+}
+
 /**pagina de recursos gratis**/
 .aprendeGratis {
+  min-height: 50vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   flex-wrap: wrap;
   justify-content: center;
 }
+.aprendeGratis h1 {
+  padding-top: 30px;
+}
 .aprendeGratis p {
-  font-size: 25px;
+  font-size: 150%;
+  padding: 2px;
 }
 
 .contenedorAprendeGratis1 {
@@ -593,7 +599,16 @@ h3 {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  width: 387px;
+}
+.contenedorAprendeGratis1 .aprende1 .boton-aprende-gratis {
+  color: #ffffff;
+  padding: 10px;
+  margin: 5px;
+  background-color: #453f3f;
+  border: 2px solid rgba(88, 79, 86, 0.77);
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 17px;
 }
 .contenedorAprendeGratis1 .aprende1 .fotodeRecursos {
   width: 330px;
@@ -609,7 +624,16 @@ h3 {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  width: 387px;
+}
+.contenedorAprendeGratis1 .aprende2 .boton-aprende-gratis {
+  color: #ffffff;
+  padding: 10px;
+  margin: 5px;
+  background-color: #453f3f;
+  border: 2px solid rgba(88, 79, 86, 0.77);
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 17px;
 }
 .contenedorAprendeGratis1 .aprende2 .fotodeRecursos {
   width: 330px;
@@ -619,6 +643,44 @@ h3 {
 .contenedorAprendeGratis1 .aprende2 p {
   font-size: 15px;
   padding-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedorAprendeGratis1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenedorAprendeGratis1 .aprende1 {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .contenedorAprendeGratis1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenedorAprendeGratis1 .aprende2 {
+    padding: 20px;
+  }
+}
+/*pagina de contacto*/
+.contenedor-contacto {
+  min-height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-contacto h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.contenedor-contacto p {
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
