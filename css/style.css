@@ -176,21 +176,23 @@ nav ul li a:hover {
   flex-wrap: wrap;
   align-content: flex-start;
 }
-
-.iconosDedescripcion {
+.DescripciondelCurso ul {
+  list-style-type: none;
+}
+.DescripciondelCurso .parrafodelaDescripcion {
+  font-size: 35px;
+  padding: 20px;
+}
+.DescripciondelCurso .iconosDedescripcion {
   width: 50px;
   height: 50px;
   padding: 10px;
 }
-
-.textoDescripcion {
+.DescripciondelCurso .textoDescripcion {
   font-size: 20px;
 }
 
-.parrafodelaDescripcion {
-  font-size: 20px;
-}
-
+/*
 @media screen and (max-width: 768px) {
   .DescripciondelCurso {
     display: flex;
@@ -201,6 +203,7 @@ nav ul li a:hover {
     justify-content: center;
   }
 }
+
 @media screen and (max-width: 450px) {
   .DescripciondelCurso {
     display: flex;
@@ -208,12 +211,18 @@ nav ul li a:hover {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    align-content: flex-end;
-  }
-  .DescripciondelCurso .parrafodelaDescripcion {
-    padding-top: 20%;
-  }
+    align-content: flex-end; 
+    .parrafodelaDescripcion {
+      padding-top:20%;
+    }
+      li{
+        list-style-type: none;
+      }
+    }
+
 }
+
+*/
 /**contenedor grid 2**/
 .grid2 {
   min-height: 100vh;
@@ -319,10 +328,6 @@ p {
   .caja1,
   .caja2,
   .caja3 {
-    /*
-      width: 664px;
-      height: 282px;
-      */
     background-color: #000000;
     margin: 25px;
     padding: 5px;
@@ -339,11 +344,6 @@ p {
   .caja1,
   .caja2,
   .caja3 {
-    /**
-      width: 681px;
-      height: 404px;
-       margin: 33px;
-      **/
     background-color: #000000;
     border: 1px solid rgb(0, 0, 0);
     line-height: 1.6rem;
@@ -353,23 +353,21 @@ p {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .caja1 p,
+  .caja2 p,
+  .caja3 p {
+    font-size: 15px;
+    padding: 5px;
+  }
   .boton__cajas {
     color: #f8f9fa;
     padding: 10px;
     margin: 5px;
     background-color: #453f3f;
     border: 2px solid rgba(88, 79, 86, 0.77);
-    /*
-      width: 265px;
-      height: 67px;*/
     font-weight: bold;
-    height: 67px;
-    font-size: 30px;
+    font-size: 15px;
     border-radius: 16px;
-  }
-  p {
-    font-size: 25px;
-    padding: 5px;
   }
 }
 /**aca comienzan los estilos del formulario**/
@@ -378,10 +376,6 @@ p {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-}
-
-.contacto1 {
-  width: 431px;
 }
 
 .titulodeContacto {
@@ -458,9 +452,11 @@ fieldset {
   .contenedor2Flex {
     display: flex;
     flex-wrap: wrap;
-    /*
-      width: 750px;
-      */
+  }
+  .titulodeContacto {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
   }
 }
 /**aca terminan los estilos del formulario**/
