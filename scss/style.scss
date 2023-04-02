@@ -6,7 +6,6 @@ $tamaño-principal-parrafos:25px;
 $borde-principal-card: 30px;
 @import "./componentes/nav";
 
-
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +16,8 @@ $borde-principal-card: 30px;
     background-color: #000000;
     color: aliceblue;
   }
+
+
   /** aca comienza la nav**/
   .contenedorHeader {
     display: grid;
@@ -160,7 +161,7 @@ $borde-principal-card: 30px;
       grid-template-columns: 80%;
       justify-content: space-around;
       justify-items: stretch;
-      width: 720px;
+     
     }
   
     .miFoto {
@@ -179,7 +180,7 @@ $borde-principal-card: 30px;
       grid-template-columns: 80%;
       justify-content: space-around;
       justify-items: stretch;
-      width: 711px;
+     
     }
   }
   
@@ -238,6 +239,7 @@ $borde-principal-card: 30px;
   .caja1,
   .caja2,
   .caja3 {
+  
     width: 350px;
     height: 350px;
     background-color: #000000;
@@ -287,8 +289,10 @@ $borde-principal-card: 30px;
     .caja1,
     .caja2,
     .caja3 {
+      /*
       width: 664px;
       height: 282px;
+      */
       background-color: #000000;
       margin: 25px;
       padding: 5px;
@@ -306,10 +310,13 @@ $borde-principal-card: 30px;
     .caja1,
     .caja2,
     .caja3 {
+        /**
       width: 681px;
       height: 404px;
+       margin: 33px;
+      **/
       background-color: #000000;
-      margin: 33px;
+   
       border: 1px solid rgb(0, 0, 0);
       line-height: 1.6rem;
       box-shadow: rgba(67, 63, 66, 0.773) 0px 5px 15px;
@@ -324,7 +331,10 @@ $borde-principal-card: 30px;
       margin: 5px;
       background-color: #453f3f;
       border: 2px solid rgb(88 79 86 / 77%);
+      /*
       width: 265px;
+      height: 67px;*/
+
       font-weight: bold;
       height: 67px;
       font-size: 30px;
@@ -423,7 +433,9 @@ $borde-principal-card: 30px;
     .contenedor2Flex {
       display: flex;
       flex-wrap: wrap;
+      /*
       width: 750px;
+      */
     }
   }
   
@@ -457,7 +469,9 @@ $borde-principal-card: 30px;
   }
   @media screen and (max-width: 768px) {
     footer ul {
-      width: 713px;
+        /*
+      width: 713px; */
+
       display: flex;
       list-style-type: none;
       justify-content: center;
@@ -552,13 +566,14 @@ $borde-principal-card: 30px;
   /**estilos de items descriptivos de la modalidad de los cursos**/
   .DescripciondelCurso {
     display: flex;
+    /*
     width: 581px;
     height: 508px;
+    */
     list-style-type: none;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+    align-content: flex-start;
   }
   
   .iconosDedescripcion {
@@ -576,8 +591,10 @@ $borde-principal-card: 30px;
   @media screen and (max-width: 768px) {
     .DescripciondelCurso {
       display: flex;
+      /*
       width: 591px;
       height: 593px;
+      */
       list-style-type: none;
       flex-wrap: wrap;
       flex-direction: column;
@@ -588,8 +605,10 @@ $borde-principal-card: 30px;
   @media screen and (max-width: 450px) {
     .DescripciondelCurso {
       display: flex;
+      /*
       width: 563px;
       height: 554px;
+      */
       list-style-type: none;
       justify-content: center;
       flex-wrap: wrap;

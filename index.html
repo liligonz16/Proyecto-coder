@@ -20,175 +20,194 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css" />
+
 </head>
-
-
 
 <body> <!-- Bootstrap JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+
   <!--inicio encabezado-->
-
-
-
-  
-  <header class="contenedorHeader">
-    <!--aca va el logo-->
-    <a class="itemNav1" href="#"> <img class=logo1 src="./imagenes/LOGO EN BLANCO.png" alt="logo"></a>
-
-
-
-<!--esto es un menu>-->
-    <nav class="itemNav2"> 
+  <!--aca va el logo
+    <a class="itemNav1" href="#"> <img class=logo1 src="./imagenes/LOGO EN BLANCO.png" alt="logo"></a>-->
+  <!--esto es un menu>---
+    <nav class="itemNav2">
       <ul>
         <li><a href="./index.html">Inicio</a></li>
         <li><a href="./pages/Recursos-gratis.html">Recursos Gratis</a></li>
         <li><a href="./pages/cursos.html">Cursos</a></li>
-        <li><a href="./pages/contacto.html" >Contacto</a></li>
+        <li><a href="./pages/contacto.html">Contacto</a></li>
         <li><a href="./pages/sobre-mi.html"> Más sobre mi</a></li>
       </ul>
     </nav>
-    <!--fin del nav-->
-
-
-  </header>
+    fin del nav-->
   <!--fin del encabezado-->
 
 
   <!--main etiqueta semantica para ubicar el contenido principal-->
+  <!--esto es un menu con bootstrap-->
+  <header class="contenedorHeader">
+    <a class="itemNav1" href="#"> <img class=logo1 src="./imagenes/LOGO EN BLANCO.png" alt="logo"></a>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">Incio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./pages/Recursos-gratis.html"> Recursos Gratis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/cursos.html">Cursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./pages/sobre-mi.html">Más sobre mi</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--aca termina la nav-->
+
+    <!--main etiqueta semantica para ubicar el contenido principal-->
+    
+  </header>
+
   <main>
 
-
-    <section class="grid1">
-
-      <div class="item1">
-        <h1 class="tituloPrincipal">¡Hola, Soy Lili!</h1>
-      </div>
-
-      <div class="item">
-        <h2 class="subTituloprincipal">Marketer profesional y web master</h2>
-
-        <p class="parrafoSobremi"> Voy a enseñarte todo lo que he aprendido en mi carrera profesional para que vos
-          también emprendas y aprendas.
-          Soy Correntina. Actualmente viviendo en Bs As hace varios años, estudie
-          Analista en sistemas de la Información, soy una persona autodidacta por naturaleza,
-          apasionada por los datos y el marketing digital. Me encantan los
-          desafíos de alta complejidad. Eterna aprendiz.
-        </p>
-      </div>
-
-      <div class="item2">
-        <img class=miFoto src="./imagenes/mi-foto.png" alt="Esta es una foto de la diseñadora de este sitio web" />
-      </div>
-    </section>
-
-    <div class="DescripciondelCurso">
-      <p class=parrafodelaDescripcion>Modalidad de nuestros cursos, aprendamos juntos! </p>
-      <ul></ul>
-      <li>
-        <img class=iconosDedescripcion src="./imagenes/100%online.png" alt="icono 100% online">
-        <span class="textoDescripcion">100% Online. </span>
-      </li>
-      <li>
-        <img class=iconosDedescripcion src="./imagenes/Actualizaciones.png" alt="icono de actualizaciones">
-        <span class="textoDescripcion">Actualizaciones permanentes.</span>
-      </li>
-      <li>
-        <img class=iconosDedescripcion src="./imagenes/Certificado.png" alt="icono Certificado">
-        <span class="textoDescripcion">Certificado de participacion.</span>
-      </li>
-      <li>
-        <img class=iconosDedescripcion src="./imagenes/relog.png" alt="icono relog">
-        <span class="textoDescripcion">Acceso de por vida.</span>
-      </li>
-      <li>
-        <img class=iconosDedescripcion src="./imagenes/materialdesc.png" alt="icono material descargable">
-        <span class="textoDescripcion">Material descargable.</span>
-      </li>
-      </ul>
+  <section class="grid1">
+    <div class="item1">
+      <h1 class="tituloPrincipal">¡Hola, Soy Lili!</h1>
+    </div>
+    <div class="item">
+      <h2 class="subTituloprincipal">Marketer profesional y web master</h2>
+      <p class="parrafoSobremi"> Voy a enseñarte todo lo que he aprendido en mi carrera profesional para que vos
+        también emprendas y aprendas.
+        Soy Correntina. Actualmente viviendo en Bs As hace varios años, estudie
+        Analista en sistemas de la Información, soy una persona autodidacta por naturaleza,
+        apasionada por los datos y el marketing digital. Me encantan los
+        desafíos de alta complejidad. Eterna aprendiz.
+      </p>
     </div>
 
-    <section class="grid2">
-      <h3 class=itemdelSubtitulo1>Cursos</h3>
+  <div class="item2">
+      <img class=miFoto src="./imagenes/mi-foto.png" alt="Esta es una foto de la diseñadora de este sitio web" />
+    </div>
+  </section>
 
-      <div class="contenedor1Flex">
 
-        <div class="caja1">
-          <img src="./imagenes/WORDPRESS.png" alt=" Esta es una imagen del logo del Wordpress" />
-          <p>Aprende a crear sitios profesionales sin saber programar</p>
-          <a class="boton__cajas" href="">Saber más</a>
+  <!--descripcion del curso-->
+  <div class="DescripciondelCurso">
+    <p class=parrafodelaDescripcion>Modalidad de nuestros cursos, aprendamos juntos! </p>
+    <ul></ul>
+    <li>
+      <img class=iconosDedescripcion src="./imagenes/100%online.png" alt="icono 100% online">
+      <span class="textoDescripcion">100% Online. </span>
+    </li>
+    <li>
+      <img class=iconosDedescripcion src="./imagenes/Actualizaciones.png" alt="icono de actualizaciones">
+      <span class="textoDescripcion">Actualizaciones permanentes.</span>
+    </li>
+    <li>
+      <img class=iconosDedescripcion src="./imagenes/Certificado.png" alt="icono Certificado">
+      <span class="textoDescripcion">Certificado de participacion.</span>
+    </li>
+    <li>
+      <img class=iconosDedescripcion src="./imagenes/relog.png" alt="icono relog">
+      <span class="textoDescripcion">Acceso de por vida.</span>
+    </li>
+    <li>
+      <img class=iconosDedescripcion src="./imagenes/materialdesc.png" alt="icono material descargable">
+      <span class="textoDescripcion">Material descargable.</span>
+    </li>
+    </ul>
+  </div>
+<!--aca termina la descripcion del curso-->
 
-        </div>
 
-        <div class="caja2">
-          <img src="./imagenes/WOO.png" alt="Esta es una imagen del logo de Woocomemerce" />
-          <p>Crea tu tienda en linea</p>
-          <a class="boton__cajas" href="">Saber Más</a>
-        </div>
+<!--cajitas del home cursos-->
+  <section class="grid2">
+    <h3 class=itemdelSubtitulo1>Cursos</h3>
 
-        <div class="caja3">
-          <img src="./imagenes/PSD.png" alt="Esta es una imagen del logo de photoshop" />
-          <p>Diseña vos mismo para tus proyectos o el de tus clientes</p>
-          <a class="boton__cajas" href="">Saber Más</a>
-        </div>
+    <div class="contenedor1Flex">
+
+      <div class="caja1">
+        <img src="./imagenes/WORDPRESS.png" alt=" Esta es una imagen del logo del Wordpress" />
+        <p>Aprende a crear sitios profesionales sin saber programar</p>
+        <a class="boton__cajas" href="">Saber más</a>
+
       </div>
-    </section>
 
-
-    <!--fin del contenido mas importante de la página-->
-
-
-    <div class="container contenedor2Flex">
-
-      <div class="contacto1">
-        <span class="titulodeContacto"> contacto</span>
-        <ul>
-          <li>
-            Buenos Aires-Argentina
-          </li>
-          <li>
-            Tel: 3794-111111
-          </li>
-          <li>
-            Email: linuclear21@gmail.com
-          </li>
-        </ul>
+      <div class="caja2">
+        <img src="./imagenes/WOO.png" alt="Esta es una imagen del logo de Woocomemerce" />
+        <p>Crea tu tienda en linea</p>
+        <a class="boton__cajas" href="">Saber Más</a>
       </div>
 
-      <!--Formulario-->
-
-      <div class="formulario1">
-        <form>
-          <fieldset>
-            <legend></legend>
-            <label class="nombresdelFormulario" for="nombre">Nombre:</label>
-            <input class="cajadelFormulario" type="text" id="nombre" />
-            <br />
-            <label class="nombresdelFormulario" for="email">Email:</label>
-            <input class="cajadelFormulario" type="email" id="email" required />
-            <br />
-            <label class="nombresdelFormulario" for="comentario">Contame sobre tu proyecto: </label>
-            <br>
-            <textarea class="cajadeComentario" name="comentario" id="comentario" cols="30" rows="10"></textarea>
-            <br />
-            <input class="boton" type="submit" name="enviar" id="enviar" />
-          </fieldset>
-        </form>
+      <div class="caja3">
+        <img src="./imagenes/PSD.png" alt="Esta es una imagen del logo de photoshop" />
+        <p>Diseña vos mismo para tus proyectos o el de tus clientes</p>
+        <a class="boton__cajas" href="">Saber Más</a>
       </div>
-    
-</div>
+    </div>
+  </section>
+<!--aca terminan las cajitas-->
 
-
-  </main>
 
   <!--fin del contenido mas importante de la página-->
 
 
+
+  <!--cajita info de contacto-->
+  <div class="container contenedor2Flex">
+    <div class="contacto1">
+      <span class="titulodeContacto"> contacto</span>
+      <ul>
+        <li>
+          Buenos Aires-Argentina
+        </li>
+        <li>
+          Tel: 3794-111111
+        </li>
+        <li>
+          Email: linuclear21@gmail.com
+        </li>
+      </ul>
+    </div>
+    <!--Formulario-->
+    <div class="formulario1">
+      <form>
+        <fieldset>
+          <legend></legend>
+          <label class="nombresdelFormulario" for="nombre">Nombre:</label>
+          <input class="cajadelFormulario" type="text" id="nombre" />
+          <br />
+          <label class="nombresdelFormulario" for="email">Email:</label>
+          <input class="cajadelFormulario" type="email" id="email" required />
+          <br />
+          <label class="nombresdelFormulario" for="comentario">Contame sobre tu proyecto: </label>
+          <br>
+          <textarea class="cajadeComentario" name="comentario" id="comentario" cols="30" rows="10"></textarea>
+          <br />
+          <input class="boton" type="submit" name="enviar" id="enviar" />
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  </main>
+  <!--fin del contenido mas importante de la página-->
+
+<!--Footer-->
   <footer>
     <ul>
       <li>
-
         <a href="https://www.linkedin.com/in/liliana-gonzalez-65a4961ba/" target="_blank">
           <img class="logo2" src="./imagenes/linkedin.png" alt="logo de linkedin">
         </a>
@@ -199,8 +218,22 @@
     </ul>
     <p class=copyright>copyright 2023</p>
   </footer>
+  <!--finde del footer-->
+</body>
+</html>
 
-  <!--enlace relativo me lleva a otra pagina de mi sitio
+
+
+
+
+
+
+
+
+
+
+
+<!--enlace relativo me lleva a otra pagina de mi sitio
 
     <a href="./pages/contacto.html"> soy un link hacia contacto </a>
     <br />
@@ -259,6 +292,3 @@
   </body>
 </html>
 -->
-</body>
-
-</html>

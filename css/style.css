@@ -170,7 +170,6 @@ nav ul li a:hover {
     grid-template-columns: 80%;
     justify-content: space-around;
     justify-items: stretch;
-    width: 720px;
   }
   .miFoto {
     width: 270px;
@@ -184,7 +183,6 @@ nav ul li a:hover {
     grid-template-columns: 80%;
     justify-content: space-around;
     justify-items: stretch;
-    width: 711px;
   }
 }
 /**contenedor grid 2**/
@@ -293,8 +291,10 @@ p {
   .caja1,
   .caja2,
   .caja3 {
+    /*
     width: 664px;
     height: 282px;
+    */
     background-color: #000000;
     margin: 25px;
     padding: 5px;
@@ -311,10 +311,12 @@ p {
   .caja1,
   .caja2,
   .caja3 {
+    /**
     width: 681px;
     height: 404px;
+     margin: 33px;
+    **/
     background-color: #000000;
-    margin: 33px;
     border: 1px solid rgb(0, 0, 0);
     line-height: 1.6rem;
     box-shadow: rgba(67, 63, 66, 0.773) 0px 5px 15px;
@@ -329,7 +331,9 @@ p {
     margin: 5px;
     background-color: #453f3f;
     border: 2px solid rgba(88, 79, 86, 0.77);
+    /*
     width: 265px;
+    height: 67px;*/
     font-weight: bold;
     height: 67px;
     font-size: 30px;
@@ -426,7 +430,9 @@ fieldset {
   .contenedor2Flex {
     display: flex;
     flex-wrap: wrap;
+    /*
     width: 750px;
+    */
   }
 }
 /**aca terminan los estilos del formulario**/
@@ -460,7 +466,8 @@ footer ul {
 
 @media screen and (max-width: 768px) {
   footer ul {
-    width: 713px;
+    /*
+    width: 713px; */
     display: flex;
     list-style-type: none;
     justify-content: center;
@@ -556,13 +563,14 @@ h3 {
 /**estilos de items descriptivos de la modalidad de los cursos**/
 .DescripciondelCurso {
   display: flex;
+  /*
   width: 581px;
   height: 508px;
+  */
   list-style-type: none;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
+  align-content: flex-start;
 }
 
 .iconosDedescripcion {
@@ -582,8 +590,10 @@ h3 {
 @media screen and (max-width: 768px) {
   .DescripciondelCurso {
     display: flex;
+    /*
     width: 591px;
     height: 593px;
+    */
     list-style-type: none;
     flex-wrap: wrap;
     flex-direction: column;
@@ -594,8 +604,10 @@ h3 {
 @media screen and (max-width: 450px) {
   .DescripciondelCurso {
     display: flex;
+    /*
     width: 563px;
     height: 554px;
+    */
     list-style-type: none;
     justify-content: center;
     flex-wrap: wrap;
