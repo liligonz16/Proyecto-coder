@@ -202,37 +202,6 @@ nav ul {
   }
   
 }
-/*
-@media screen and (max-width: 768px) {
-  .DescripciondelCurso {
-    display: flex;
-    list-style-type: none;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: flex-end;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .DescripciondelCurso {
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: flex-end; 
-    .parrafodelaDescripcion {
-      padding-top:20%;
-    }
-      li{
-        list-style-type: none;
-      }
-    }
-  
-}
-
-*/
 /**contenedor grid 2**/
 .grid2 {
   min-height: 100vh;
@@ -511,9 +480,6 @@ footer ul {
 
 @media screen and (max-width: 768px) {
   footer ul {
-    /*
-      width: 713px; */
-
     display: flex;
     list-style-type: none;
     justify-content: center;
@@ -635,7 +601,6 @@ h3 {
 }
 
 /**pagina de recursos gratis**/
-/**grid5**/
 
 .aprendeGratis {
   display: flex;
@@ -643,41 +608,53 @@ h3 {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 30px;
-  height: 300px;
-
   p {
     font-size: $tamaño-principal-parrafos;
   }
 }
 
-.fotodeRecursos {
-  width: 330px;
-  height: 300px;
-  border-radius: 30px;
-}
+
 
 .contenedorAprendeGratis1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  height: 490px;
+  height: 100%;
+
+  .aprende1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 387px; 
+    .fotodeRecursos {
+      width: 330px;
+      height: 300px;
+      border-radius: 30px;
+    }
+     p{
+      font-size: 15px;
+      padding-top: 10px;
+    }
+  }
+  .aprende2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 387px;
+    .fotodeRecursos {
+      width: 330px;
+      height: 300px;
+      border-radius: 30px;
+    }
+    p{
+      font-size: 15px;
+      padding-top: 10px;
+    }
+  
+  }
+
+
 }
 
-.aprende1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 387px;
-  height: 389px;
-}
-
-.aprende2 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 387px;
-  height: 389px;
-}
