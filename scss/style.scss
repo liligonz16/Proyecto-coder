@@ -119,10 +119,10 @@ nav ul {
   min-height: 100vh;
   display: grid;
   grid-template-areas:
-    "item1 item2"
-    "item item2";
+      "item1 item2"
+      "item item2";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 163px 1fr;
+  grid-template-rows: 1fr 1fr;
   align-items: center;
   justify-items: center;
 
