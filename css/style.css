@@ -133,7 +133,7 @@ nav ul li a:hover {
   display: grid;
   grid-template-areas: "item1 item2" "item item2";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 163px 1fr;
+  grid-template-rows: 1fr 1fr;
   align-items: center;
   justify-items: center;
 }
@@ -151,6 +151,17 @@ nav ul li a:hover {
 .grid1 .item .parrafoSobremi {
   padding: 30px;
   line-height: 1.6rem;
+}
+.grid1 .item a {
+  color: #ffffff;
+  padding: 10px;
+  margin: 5px;
+  background-color: #8b008b;
+  border: 2px solid rgba(88, 79, 86, 0.77);
+  width: 150px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 17px;
 }
 .grid1 .item2 {
   display: flex;
