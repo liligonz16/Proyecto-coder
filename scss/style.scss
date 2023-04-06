@@ -116,13 +116,13 @@ nav ul {
 
 /**contenedor grid 1**/
 .grid1 {
-  min-height: 100vh;
+  min-height: 50vh;
   display: grid;
   grid-template-areas:
       "item1 item2"
       "item item2";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 274px auto;
   align-items: center;
   justify-items: center;
 
@@ -137,18 +137,22 @@ nav ul {
 
   .item {
     grid-area: item;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 
-    .parrafoSobremi {
-      padding: 30px;
+    .parrafoSobremiHome {
+     
       line-height: 1.6rem;
     }
     a {
       color: #ffffff;
-    padding: 10px;
-    margin: 5px;
+    padding: 15px;
+    margin: 20px;
     background-color:#8b008b;
     border: 2px solid rgba(88, 79, 86, 0.77);
-    width: 150px;
+   
     font-weight: bold;
     font-size: 15px;
     border-radius: 17px;
@@ -488,54 +492,22 @@ footer ul {
 
 /**PÁGINA SOBRE MI**/
 
-/**contenedor grid 3**/
-.grid3 {
-  min-height: 100vh;
-  display: grid;
-  grid-template-areas:
-    "gridItem1 gridItem3"
-    "gridItem2 gridItem3";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 268px 2fr;
-  align-items: center;
 
-  .gridItem1 {
+.contenedor-sobremi {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+
+  .contenedorhijo-sobremi1 {
     display: flex;
-    grid-area: gridItem1;
-    flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-
+    flex-direction: column;
     .SubtituloSobremi {
-      padding: 25px;
-      font-size: 25px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      margin-left: 25px;
-    }
-
-  }
-
-  .gridItem2 {
-    grid-area: gridItem2;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    .parrafoSobremi2 {
-      margin-bottom: 2rem;
-      
+      text-align: center;
     }
   }
-
-  .gridItem3 {
-    grid-area: gridItem3;
+  .contenedorhijo.sobremi2{
     display: flex;
-    justify-content: center;
-
-    .miFoto {
-      border-radius: 20px;
-      width: 380px;
-    }
   }
 }
 

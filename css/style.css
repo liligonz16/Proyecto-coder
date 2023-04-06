@@ -129,11 +129,11 @@ nav ul li a:hover {
 
 /**contenedor grid 1**/
 .grid1 {
-  min-height: 100vh;
+  min-height: 50vh;
   display: grid;
   grid-template-areas: "item1 item2" "item item2";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 274px auto;
   align-items: center;
   justify-items: center;
 }
@@ -147,18 +147,20 @@ nav ul li a:hover {
 }
 .grid1 .item {
   grid-area: item;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
-.grid1 .item .parrafoSobremi {
-  padding: 30px;
+.grid1 .item .parrafoSobremiHome {
   line-height: 1.6rem;
 }
 .grid1 .item a {
   color: #ffffff;
-  padding: 10px;
-  margin: 5px;
+  padding: 15px;
+  margin: 20px;
   background-color: #8b008b;
   border: 2px solid rgba(88, 79, 86, 0.77);
-  width: 150px;
   font-weight: bold;
   font-size: 15px;
   border-radius: 17px;
@@ -463,45 +465,21 @@ footer ul {
   }
 }
 /**PÁGINA SOBRE MI**/
-/**contenedor grid 3**/
-.grid3 {
-  min-height: 100vh;
-  display: grid;
-  grid-template-areas: "gridItem1 gridItem3" "gridItem2 gridItem3";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 268px 2fr;
-  align-items: center;
-}
-.grid3 .gridItem1 {
+.contenedor-sobremi {
   display: flex;
-  grid-area: gridItem1;
-  flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
+  padding: 20px;
 }
-.grid3 .gridItem1 .SubtituloSobremi {
-  padding: 25px;
-  font-size: 25px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-left: 25px;
-}
-.grid3 .gridItem2 {
-  grid-area: gridItem2;
+.contenedor-sobremi .contenedorhijo-sobremi1 {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+  flex-direction: column;
 }
-.grid3 .gridItem2 .parrafoSobremi2 {
-  margin-bottom: 2rem;
+.contenedor-sobremi .contenedorhijo-sobremi1 .SubtituloSobremi {
+  text-align: center;
 }
-.grid3 .gridItem3 {
-  grid-area: gridItem3;
+.contenedor-sobremi .contenedorhijo.sobremi2 {
   display: flex;
-  justify-content: center;
-}
-.grid3 .gridItem3 .miFoto {
-  border-radius: 20px;
-  width: 380px;
 }
 
 .boton5 {
