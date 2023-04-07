@@ -29,6 +29,7 @@
 body {
   background-color: #000000;
   color: aliceblue;
+  font-family: "Montserrat", sans-serif;
 }
 
 .itemNav1 {
@@ -128,7 +129,7 @@ nav ul {
     }
   }
 }*/
-/**contenedor grid 1**/
+/**contenedor grid 1 home algo sobre mi y foto**/
 .grid1 {
   min-height: 50vh;
   display: grid;
@@ -197,7 +198,8 @@ nav ul {
     font-size: 15px;
   }
 }
-/**contenedor grid 2**/
+/*aca termina todo sobre la grid 1*/
+/**contenedor grid 2. Esta es la grid 2 que contiene las cajas  de los cursos **/
 .grid2 {
   min-height: 100vh;
   grid-template-areas: "itemdelSubtitulo1" "contenedor1Flex";
@@ -207,7 +209,8 @@ nav ul {
 }
 .grid2 .itemdelSubtitulo1 {
   grid-area: itemdelSubtitulo1;
-  font-size: 50px;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .contenedor1Flex {
@@ -220,10 +223,6 @@ nav ul {
 .itemdelSubtitulo2 {
   grid-area: itemdelSubtitulo2;
   font-size: 50px;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
 }
 
 .tituloPrincipal {
@@ -300,6 +299,7 @@ p {
   color: #ffffff;
 }
 
+/*tamaño de las imagenes de la caja*/
 .caja1 img {
   width: 150px;
   height: 150px;
@@ -361,6 +361,7 @@ p {
     border-radius: 16px;
   }
 }
+/*aca termina todo sobre la grid2 con sus queries */
 /**aca comienzan los estilos del formulario**/
 .contenedor2Flex {
   display: flex;
@@ -411,7 +412,7 @@ fieldset {
 }
 
 .cajadeComentario {
-  height: 104px;
+  height: 5rem;
   width: 300px;
   border-radius: 32px;
 }
@@ -494,7 +495,8 @@ footer ul {
     flex-wrap: wrap;
   }
 }
-/**PÁGINA SOBRE MI**/
+/*aca termina el footer*/
+/** aca comienza la PÁGINA SOBRE MI**/
 .contenedor-sobremi {
   display: flex;
   flex-wrap: wrap;
@@ -520,7 +522,7 @@ footer ul {
   font-size: 30px;
 }
 
-/**grid4**/
+/**grid4  items de especialidades**/
 .grid4 {
   min-height: 100vh;
   display: grid;
@@ -623,6 +625,7 @@ h3 {
   font-size: 20px;
 }
 
+/*aca termina la pagina de cursos*/
 /**pagina de recursos gratis**/
 .aprendeGratis {
   min-height: 50vh;

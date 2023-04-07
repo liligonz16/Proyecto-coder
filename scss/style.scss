@@ -15,6 +15,7 @@ $borde-principal-card: 30px;
 body {
   background-color: #000000;
   color: aliceblue;
+  font-family: "Montserrat", sans-serif;
 }
 
 .itemNav1 {
@@ -118,7 +119,7 @@ nav ul {
   }
 }*/
 
-/**contenedor grid 1**/
+/**contenedor grid 1 home algo sobre mi y foto**/
 .grid1 {
   min-height: 50vh;
   display: grid;
@@ -208,9 +209,9 @@ nav ul {
   }
 }
 
+/*aca termina todo sobre la grid 1*/
 
-
-/**contenedor grid 2**/
+/**contenedor grid 2. Esta es la grid 2 que contiene las cajas  de los cursos **/
 .grid2 {
   min-height: 100vh;
   grid-template-areas:
@@ -222,7 +223,8 @@ nav ul {
 
   .itemdelSubtitulo1 {
     grid-area: itemdelSubtitulo1;
-    font-size: 50px;
+    font-size: 3rem;
+    font-weight: bold;
   }
 
 }
@@ -239,9 +241,6 @@ nav ul {
   font-size: 50px;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-}
 
 .tituloPrincipal {
   font-weight: bold;
@@ -285,6 +284,7 @@ a {
 
 
 }
+
 /*
 .caja1:hover {
   transform: scale(1, 1);
@@ -319,7 +319,7 @@ p {
   color: #ffffff;
 }
 
-
+/*tamaño de las imagenes de la caja*/
 .caja1 img {
   width: 150px;
   height: 150px;
@@ -386,6 +386,7 @@ p {
   }
 
 }
+/*aca termina todo sobre la grid2 con sus queries */
 
 /**aca comienzan los estilos del formulario**/
 
@@ -439,7 +440,7 @@ fieldset {
 }
 
 .cajadeComentario {
-  height: 104px;
+  height: 5rem;
   width: 300px;
   border-radius: 32px;
 }
@@ -487,8 +488,8 @@ fieldset {
     font-size: 40px;
   }
 }
-
 /**aca terminan los estilos del formulario**/
+
 /**footer**/
 footer ul {
   display: flex;
@@ -526,10 +527,10 @@ footer ul {
     flex-wrap: wrap;
   }
 }
+/*aca termina el footer*/
 
-/**PÁGINA SOBRE MI**/
 
-
+/** aca comienza la PÁGINA SOBRE MI**/
 .contenedor-sobremi {
   display: flex;
   flex-wrap: wrap;
@@ -558,7 +559,8 @@ footer ul {
   font-size: 30px;
 }
 
-/**grid4**/
+
+/**grid4  items de especialidades**/
 .grid4 {
   min-height: 100vh;
   display: grid;
@@ -618,8 +620,6 @@ h3 {
   }
 
 }
-
-
 /**aca termina la pagina sobre mi **/
 
 /**estilos de items descriptivos de la modalidad de los cursos**/
@@ -632,7 +632,6 @@ h3 {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-
   background: rgb(7, 70, 70);
   background: radial-gradient(circle, rgba(7, 70, 70, 1) 1%, rgba(0, 0, 0, 1) 100%, rgba(0, 14, 17, 1) 100%);
 
@@ -686,7 +685,7 @@ h3 {
 
 }
 
-
+/*aca termina la pagina de cursos*/
 
 /**pagina de recursos gratis**/
 
