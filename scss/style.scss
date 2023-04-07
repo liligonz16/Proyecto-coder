@@ -23,8 +23,9 @@ body {
 .contenedorHeader {
   background-color: #000000;
 }
-
-
+.navbar-toggler-icon{
+  color: #8b008b;
+}
 
 /** aca comienza la nav
 .contenedorHeader {
@@ -150,7 +151,7 @@ nav ul {
     align-items: center;
 
     .parrafoSobremiHome {
-     
+     padding: 20px;
       line-height: 1.6rem;
     }
     a {
@@ -267,7 +268,7 @@ a {
 .caja3 {
 
   width: 350px;
-  height: 350px;
+  
   background-color: #000000;
   margin: 33px;
   padding: 30px;
@@ -356,7 +357,7 @@ p {
     color: #f8f9fa;
     padding: 10px;
     margin: 5px;
-    background-color: #453f3f;
+    background-color:$color-Principal;
     border: 2px solid rgb(88 79 86 / 77%);
     font-weight: bold;
     font-size: 15px;
@@ -673,7 +674,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  height: 100%;
+ 
 
   .aprende1 {
     display: flex;
@@ -685,7 +686,7 @@ h3 {
       color: #ffffff;
       padding: 10px;
       margin: 5px;
-      background-color: #453f3f;
+      background-color: $color-Principal;
       border: 2px solid rgb(88 79 86 / 77%);
 
       font-weight: bold;
@@ -716,7 +717,7 @@ h3 {
       color: #ffffff;
       padding: 10px;
       margin: 5px;
-      background-color: #453f3f;
+      background-color: $color-Principal;
       border: 2px solid rgb(88 79 86 / 77%);
 
       font-weight: bold;
