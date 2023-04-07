@@ -1,6 +1,6 @@
 /** Página del index **/
 
-$color-Principal: darkmagenta;
+$color-Principal: #8b008b;
 $color-principal-parrafos: #fff;
 $tamaño-principal-parrafos: 25px;
 $borde-principal-card: 30px;
@@ -17,15 +17,11 @@ body {
   color: aliceblue;
 }
 
-.itemNav1{
+.itemNav1 {
   background-color: #000000;
 }
-.contenedorHeader {
-  background-color: #000000;
-}
-.navbar-toggler-icon{
-  color: #8b008b;
-}
+
+
 
 /** aca comienza la nav
 .contenedorHeader {
@@ -127,8 +123,8 @@ nav ul {
   min-height: 50vh;
   display: grid;
   grid-template-areas:
-      "item1 item2"
-      "item item2";
+    "item1 item2"
+    "item item2";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 274px auto;
   align-items: center;
@@ -151,20 +147,25 @@ nav ul {
     align-items: center;
 
     .parrafoSobremiHome {
-     padding: 20px;
+      padding: 20px;
       line-height: 1.6rem;
     }
+
     a {
       color: #ffffff;
       padding: 15px;
       margin: 20px;
-    background-color:#8b008b;
-    border: 2px solid rgba(88, 79, 86, 0.77);
-   
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 17px;
-    
+      background-color: #8b008b;
+      border: 2px solid rgba(88, 79, 86, 0.77);
+      font-weight: bold;
+      font-size: 15px;
+      border-radius: 17px;
+
+    }
+
+    a:hover {
+      background-color: rgb(7, 70, 70);
+      color: #ffffff;
     }
   }
 
@@ -243,11 +244,14 @@ body {
 }
 
 .tituloPrincipal {
+  font-weight: bold;
+  font-size: 3rem;
   text-align: center;
-  font-size: 40px;
 }
 
 .subTituloprincipal {
+  font-size: 2rem;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -268,7 +272,6 @@ a {
 .caja3 {
 
   width: 350px;
-  
   background-color: #000000;
   margin: 33px;
   padding: 30px;
@@ -279,8 +282,19 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+
+}
+/*
+.caja1:hover {
+  transform: scale(1, 1);
 }
 
+.caja1:hover {
+  width: 400px;
+  background-color: #7d7979;
+}
+*/
 .caja1,
 .caja2,
 .caja3,
@@ -300,9 +314,16 @@ p {
   border-radius: 17px;
 }
 
+.boton__cajas:hover {
+  background-color: rgb(75, 10, 64);
+  color: #ffffff;
+}
+
+
 .caja1 img {
   width: 150px;
   height: 150px;
+
 }
 
 .caja2 img {
@@ -357,7 +378,7 @@ p {
     color: #f8f9fa;
     padding: 10px;
     margin: 5px;
-    background-color:$color-Principal;
+    background-color: $color-Principal;
     border: 2px solid rgb(88 79 86 / 77%);
     font-weight: bold;
     font-size: 15px;
@@ -438,6 +459,13 @@ fieldset {
 .boton:hover {
   background-color: $color-Principal;
   color: #ffffff;
+  width: 200px;
+  transition: all 3seg;
+}
+
+.boton:focus {
+  width: 300px;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -511,11 +539,13 @@ footer ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+
     .SubtituloSobremi {
       text-align: center;
     }
   }
-  .contenedorhijo.sobremi2{
+
+  .contenedorhijo.sobremi2 {
     display: flex;
   }
 }
@@ -524,7 +554,7 @@ footer ul {
   display: flex;
   padding: 15px;
   justify-content: center;
-  background-color: darkmagenta;
+  background-color: #8b008b;
   font-size: 30px;
 }
 
@@ -563,7 +593,7 @@ h3 {
 
 @media screen and (max-width: 768px) {
   .grid4 {
-  
+
     display: grid;
     grid-template-areas: "especialidades"
       "frase";
@@ -574,6 +604,7 @@ h3 {
   }
 
 }
+
 @media screen and (max-width: 425px) {
   .grid4 {
 
@@ -602,13 +633,19 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
 
+  background: rgb(7, 70, 70);
+  background: radial-gradient(circle, rgba(7, 70, 70, 1) 1%, rgba(0, 0, 0, 1) 100%, rgba(0, 14, 17, 1) 100%);
+
   .conteinerCurso {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 
+
     h1 {
-      text-align: center;
+      font-weight: bold;
+      font-size: 2rem;
+
     }
 
     p {
@@ -618,13 +655,14 @@ h3 {
 
 }
 
-
 .DescripciondelCurso {
   display: flex;
   list-style-type: none;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: flex-start;
+
+
 
   ul {
     list-style-type: none;
@@ -657,9 +695,15 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(7, 70, 70);
+  background: radial-gradient(circle, rgba(7, 70, 70, 1) 1%, rgba(0, 0, 0, 1) 100%, rgba(0, 14, 17, 1) 100%);
 
   h1 {
-    padding-top: 30px;
+
+    font-weight: bold;
+    font-size: 3rem;
   }
 
   p {
@@ -674,7 +718,8 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
- 
+  padding: 10rem;
+
 
   .aprende1 {
     display: flex;
@@ -770,11 +815,14 @@ h3 {
 /*pagina de contacto*/
 
 .contenedor-contacto {
-  min-height: 35vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  background: rgb(7, 70, 70);
+  background: radial-gradient(circle, rgba(7, 70, 70, 1) 1%, rgba(0, 0, 0, 1) 100%, rgba(0, 14, 17, 1) 100%);
 
   h1 {
     font-size: 50px;

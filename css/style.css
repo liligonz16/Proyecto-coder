@@ -1,19 +1,23 @@
 @charset "UTF-8";
 /** Página del index **/ /** aca comienza la nav**/
 .contenedorHeader {
-  display: grid;
-  grid-template-areas: "itemNav1 itemNav2";
-  grid-template-columns: 30% 70%;
-  grid-template-rows: 100%;
-  align-items: center;
+  display: flex;
   border-bottom: 1px solid #ffffff;
   position: sticky;
   top: 0;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #000000;
 }
 .contenedorHeader .logo1 {
   width: 100px;
   margin: 0px 0px 0px 30px;
   display: flex;
+}
+
+.itemNav1 {
+  background-color: #000000;
 }
 
 * {
@@ -29,14 +33,6 @@ body {
 
 .itemNav1 {
   background-color: #000000;
-}
-
-.contenedorHeader {
-  background-color: #000000;
-}
-
-.navbar-toggler-icon {
-  color: #8b008b;
 }
 
 /** aca comienza la nav
@@ -171,6 +167,10 @@ nav ul {
   font-size: 15px;
   border-radius: 17px;
 }
+.grid1 .item a:hover {
+  background-color: rgb(7, 70, 70);
+  color: #ffffff;
+}
 .grid1 .item2 {
   display: flex;
   grid-area: item2;
@@ -227,11 +227,14 @@ body {
 }
 
 .tituloPrincipal {
+  font-weight: bold;
+  font-size: 3rem;
   text-align: center;
-  font-size: 40px;
 }
 
 .subTituloprincipal {
+  font-size: 2rem;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -263,6 +266,16 @@ a {
   justify-content: center;
 }
 
+/*
+.caja1:hover {
+  transform: scale(1, 1);
+}
+
+.caja1:hover {
+  width: 400px;
+  background-color: #7d7979;
+}
+*/
 .caja1,
 .caja2,
 .caja3,
@@ -274,12 +287,17 @@ p {
   color: #ffffff;
   padding: 10px;
   margin: 5px;
-  background-color: darkmagenta;
+  background-color: #8b008b;
   border: 2px solid rgba(88, 79, 86, 0.77);
   width: 150px;
   font-weight: bold;
   font-size: 15px;
   border-radius: 17px;
+}
+
+.boton__cajas:hover {
+  background-color: rgb(75, 10, 64);
+  color: #ffffff;
 }
 
 .caja1 img {
@@ -336,7 +354,7 @@ p {
     color: #f8f9fa;
     padding: 10px;
     margin: 5px;
-    background-color: darkmagenta;
+    background-color: #8b008b;
     border: 2px solid rgba(88, 79, 86, 0.77);
     font-weight: bold;
     font-size: 15px;
@@ -411,8 +429,14 @@ fieldset {
 }
 
 .boton:hover {
-  background-color: darkmagenta;
+  background-color: #8b008b;
   color: #ffffff;
+  width: 200px;
+  transition: all 3seg;
+}
+
+.boton:focus {
+  width: 300px;
 }
 
 @media screen and (max-width: 768px) {
@@ -492,7 +516,7 @@ footer ul {
   display: flex;
   padding: 15px;
   justify-content: center;
-  background-color: darkmagenta;
+  background-color: #8b008b;
   font-size: 30px;
 }
 
@@ -559,6 +583,8 @@ h3 {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  background: rgb(7, 70, 70);
+  background: radial-gradient(circle, rgb(7, 70, 70) 1%, rgb(0, 0, 0) 100%, rgb(0, 14, 17) 100%);
 }
 .prueba .conteinerCurso {
   display: flex;
@@ -566,7 +592,8 @@ h3 {
   flex-wrap: wrap;
 }
 .prueba .conteinerCurso h1 {
-  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
 }
 .prueba .conteinerCurso p {
   font-size: 25px;
@@ -602,9 +629,14 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(7, 70, 70);
+  background: radial-gradient(circle, rgb(7, 70, 70) 1%, rgb(0, 0, 0) 100%, rgb(0, 14, 17) 100%);
 }
 .aprendeGratis h1 {
-  padding-top: 30px;
+  font-weight: bold;
+  font-size: 3rem;
 }
 .aprendeGratis p {
   font-size: 150%;
@@ -615,6 +647,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  padding: 10rem;
 }
 .contenedorAprendeGratis1 .aprende1 {
   display: flex;
@@ -626,7 +659,7 @@ h3 {
   color: #ffffff;
   padding: 10px;
   margin: 5px;
-  background-color: darkmagenta;
+  background-color: #8b008b;
   border: 2px solid rgba(88, 79, 86, 0.77);
   font-weight: bold;
   font-size: 15px;
@@ -651,7 +684,7 @@ h3 {
   color: #ffffff;
   padding: 10px;
   margin: 5px;
-  background-color: darkmagenta;
+  background-color: #8b008b;
   border: 2px solid rgba(88, 79, 86, 0.77);
   font-weight: bold;
   font-size: 15px;
@@ -691,11 +724,13 @@ h3 {
 }
 /*pagina de contacto*/
 .contenedor-contacto {
-  min-height: 35vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: rgb(7, 70, 70);
+  background: radial-gradient(circle, rgb(7, 70, 70) 1%, rgb(0, 0, 0) 100%, rgb(0, 14, 17) 100%);
 }
 .contenedor-contacto h1 {
   font-size: 50px;
