@@ -12,19 +12,8 @@
 }
 .contenedorHeader .logo1 {
   width: 100px;
-  height: 100px;
   margin: 0px 0px 0px 30px;
   display: flex;
-}
-.contenedorHeader .itemNav1 {
-  grid-area: itemNav1;
-}
-.contenedorHeader .itemNav2 {
-  grid-area: itemNav2;
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
-  align-content: center;
 }
 
 * {
@@ -36,6 +25,14 @@
 body {
   background-color: #000000;
   color: aliceblue;
+}
+
+.itemNav1 {
+  background-color: #000000;
+}
+
+.contenedorHeader {
+  background-color: #000000;
 }
 
 /** aca comienza la nav
@@ -114,19 +111,23 @@ body {
   }
 }
 **/
+/*
 nav ul {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
   width: 70%;
-}
-nav ul li {
-  color: #ffffff;
-}
-nav ul li a:hover {
-  color: darkmagenta;
-}
 
+  li {
+    color: #ffffff;
+
+    a {
+      &:hover {
+        color: darkmagenta;
+      }
+    }
+  }
+}*/
 /**contenedor grid 1**/
 .grid1 {
   min-height: 50vh;
@@ -269,7 +270,7 @@ p {
   color: #ffffff;
   padding: 10px;
   margin: 5px;
-  background-color: #453f3f;
+  background-color: darkmagenta;
   border: 2px solid rgba(88, 79, 86, 0.77);
   width: 150px;
   font-weight: bold;
@@ -406,7 +407,7 @@ fieldset {
 }
 
 .boton:hover {
-  background-color: #991d50;
+  background-color: darkmagenta;
   color: #ffffff;
 }
 
@@ -433,6 +434,7 @@ footer ul {
   display: flex;
   list-style-type: none;
   justify-content: center;
+  padding: 0rem;
 }
 
 .logo2 {
@@ -451,9 +453,9 @@ footer ul {
 
 .copyright {
   text-align: center;
-  font-size: 13px;
   border-top: 1px solid #ffffff;
   padding: 3px 0px 3px 0px;
+  margin: 0rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -575,6 +577,7 @@ h3 {
 }
 .DescripciondelCurso ul {
   list-style-type: none;
+  padding: 0rem;
 }
 .DescripciondelCurso .parrafodelaDescripcion {
   font-size: 35px;

@@ -9,19 +9,8 @@
     position: sticky;
     top: 0;
     .logo1 {
-        width: 100px;
-        height: 100px;
-        margin: 0px 0px 0px 30px;
-        display: flex;
-      }
-      .itemNav1 {
-        grid-area: itemNav1;
-      }
-      .itemNav2 {
-        grid-area: itemNav2;
-        display: flex;
-        list-style-type: none;
-        justify-content: center;
-        align-content: center;
-      }
+      width: 100px;
+      margin: 0px 0px 0px 30px;
+      display: flex;
+    }
     }

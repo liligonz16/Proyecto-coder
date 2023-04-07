@@ -17,6 +17,14 @@ body {
   color: aliceblue;
 }
 
+.itemNav1{
+  background-color: #000000;
+}
+.contenedorHeader {
+  background-color: #000000;
+}
+
+
 
 /** aca comienza la nav
 .contenedorHeader {
@@ -95,7 +103,7 @@ body {
 }
 **/
 
-
+/*
 nav ul {
   list-style-type: none;
   display: flex;
@@ -111,7 +119,7 @@ nav ul {
       }
     }
   }
-}
+}*/
 
 /**contenedor grid 1**/
 .grid1 {
@@ -147,8 +155,8 @@ nav ul {
     }
     a {
       color: #ffffff;
-    padding: 15px;
-    margin: 20px;
+      padding: 15px;
+      margin: 20px;
     background-color:#8b008b;
     border: 2px solid rgba(88, 79, 86, 0.77);
    
@@ -283,7 +291,7 @@ p {
   color: #ffffff;
   padding: 10px;
   margin: 5px;
-  background-color: #453f3f;
+  background-color: $color-Principal;
   border: 2px solid rgb(88 79 86 / 77%);
   width: 150px;
   font-weight: bold;
@@ -427,7 +435,7 @@ fieldset {
 }
 
 .boton:hover {
-  background-color: #991d50;
+  background-color: $color-Principal;
   color: #ffffff;
 }
 
@@ -457,6 +465,7 @@ footer ul {
   display: flex;
   list-style-type: none;
   justify-content: center;
+  padding: 0rem;
 }
 
 .logo2 {
@@ -475,9 +484,9 @@ footer ul {
 
 .copyright {
   text-align: center;
-  font-size: 13px;
   border-top: 1px solid #ffffff;
   padding: 3px 0px 3px 0px;
+  margin: 0rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -581,11 +590,6 @@ h3 {
 
 /**aca termina la pagina sobre mi **/
 
-
-
-
-
-
 /**estilos de items descriptivos de la modalidad de los cursos**/
 /**pagina de cursos**/
 .prueba {
@@ -623,6 +627,7 @@ h3 {
 
   ul {
     list-style-type: none;
+    padding: 0rem;
   }
 
   .parrafodelaDescripcion {
@@ -688,9 +693,6 @@ h3 {
       border-radius: 17px;
 
     }
-
-
-
 
     .fotodeRecursos {
       width: 330px;
