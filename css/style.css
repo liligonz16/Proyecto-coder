@@ -596,6 +596,7 @@ h3 {
 .prueba .conteinerCurso h1 {
   font-weight: bold;
   font-size: 2rem;
+  text-align: center;
 }
 .prueba .conteinerCurso p {
   font-size: 25px;
